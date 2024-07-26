@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cookies</title>
+</head>
+<body>
+    <h1>Stored Cookies</h1>
+    <button id="fetch-cookies">Fetch Cookies</button>
+    <pre id="cookies-display"></pre>
+
+    <script>
+        document.getElementById('fetch-cookies').addEventListener('click', () => {
+            fetch('/api/get-cookies')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('cookies-display').innerText = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error fetching cookies:', error);
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Voting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Voting</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Добро пожаловать на конкурс фотографий!</h2>
+            <p>Голосуйте за лучшие фотографии участников. Каждая фотография уникальна и заслуживает вашего внимания. Сделайте свой выбор и помогите нам определить победителя!</p>
+        </section>
+        <section class="gallery">
+            <div class="photo" id="photo1">
+                <div class="photo-container">
+                    <img src="photo1.jpg" alt="Photo 1">
+                </div>
+                <p class="description">Участница 1: Ольга Иванова - Люблю путешествовать и фотографировать природу.</p>
+                <button class="vote-button" id="vote-photo1">Vote</button>
+                <span class="votes" id="votes-photo1">53 votes</span>
+            </div>
+            <div class="photo" id="photo2">
+                <div class="photo-container">
+                    <img src="photo2.jpg" alt="Photo 2">
+                </div>
+                <p class="description">Участница 2: Анна Смирнова - Увлекаюсь искусством и создаёт прекрасные картины.</p>
+                <button class="vote-button" id="vote-photo2">Vote</button>
+                <span class="votes" id="votes-photo2">25 votes</span>
+            </div>
+        </section>
+        <section class="share">
+            <h3>Поделитесь с друзьями!</h3>
+            <p>Помогите вашим друзьям тоже проголосовать за свои любимые фотографии.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" class="social-link">Facebook</a>
+                <a href="https://vk.com/feed" class="social-link">Vkontakte</a>
+                <a href="https://www.instagram.com/" class="social-link">Instagram</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Photo Voting. Все права защищены.</p>
+    </footer>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
